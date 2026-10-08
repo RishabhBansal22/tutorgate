@@ -1,0 +1,61 @@
+import { StudentProfile } from '../types'
+
+export const mockStudents: StudentProfile[] = [
+  {
+    id: 'aarav-sharma',
+    name: 'Aarav Sharma',
+    batchName: 'Class 9 Maths (Batch A)',
+    batchType: 'Neighborhood Batch',
+    grade: 'Class 9',
+    board: 'CBSE',
+    subject: 'Mathematics',
+    monthlyFee: 3000,
+    daysDelayed: 4,
+    sessionsAttended: 12,
+    totalSessions: 12,
+    lastTestTopic: 'Polynomials & Factor Theorem',
+    lastTestScorePct: 92,
+    parentName: 'Mrs. Sunita Sharma',
+    parentPhone: '+91 98101 23456',
+    tutorVpa: 'sharma.tuitions@okaxis',
+    status: 'pending'
+  },
+  {
+    id: 'priya-patel',
+    name: 'Priya Patel',
+    batchName: 'Class 10 Science (1-on-1)',
+    batchType: '1-on-1 In-Home',
+    grade: 'Class 10',
+    board: 'CBSE',
+    subject: 'Science (Physics & Chemistry)',
+    monthlyFee: 4500,
+    daysDelayed: 2,
+    sessionsAttended: 8,
+    totalSessions: 8,
+    lastTestTopic: 'Electricity & Ohm’s Law',
+    lastTestScorePct: 96,
+    parentName: 'Mr. Rajesh Patel',
+    parentPhone: '+91 98202 87654',
+    tutorVpa: 'sharma.tuitions@okaxis',
+    status: 'pending'
+  },
+  {
+    id: 'rohan-verma',
+    name: 'Rohan Verma',
+    batchName: 'Class 11 Physics (Foundation)',
+    batchType: 'Neighborhood Batch',
+    grade: 'Class 11',
+    board: 'CBSE',
+    subject: 'Physics',
+    monthlyFee: 3500,
+    daysDelayed: 7,
+    sessionsAttended: 10,
+    totalSessions: 10,
+    lastTestTopic: 'Kinematics & Newton’s Laws',
+    lastTestScorePct: 84,
+    parentName: 'Dr. Anand Verma',
+    parentPhone: '+91 98303 54321',
+    tutorVpa: 'sharma.tuitions@okaxis',
+    status: 'pending'
+  }
+]

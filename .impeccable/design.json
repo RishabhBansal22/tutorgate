@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T14:30:00.000Z",
+  "title": "Design System: TutorGate",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Academic Indigo",
+        "canonical": "#4F46E5",
+        "tonalRamp": [
+          "#1E1B4B",
+          "#312E81",
+          "#3730A3",
+          "#4338CA",
+          "#4F46E5",
+          "#6366F1",
+          "#818CF8",
+          "#EEF2FF"
+        ]
+      },
+      "accent-amber": {
+        "role": "secondary",
+        "displayName": "Surya Amber",
+        "canonical": "#F59E0B",
+        "tonalRamp": [
+          "#451A03",
+          "#78350F",
+          "#92400E",
+          "#B45309",
+          "#D97706",
+          "#F59E0B",
+          "#FCD34D",
+          "#FEF3C7"
+        ]
+      },
+      "accent-emerald": {
+        "role": "secondary",
+        "displayName": "Veracity Emerald",
+        "canonical": "#10B981",
+        "tonalRamp": [
+          "#022C22",
+          "#064E3B",
+          "#065F46",
+          "#047857",
+          "#059669",
+          "#10B981",
+          "#6EE7B7",
+          "#ECFDF5"
+        ]
+      },
+      "claude-coral": {
+        "role": "tertiary",
+        "displayName": "Anthropic Claude Coral",
+        "canonical": "#D97757",
+        "tonalRamp": [
+          "#3F170D",
+          "#682717",
+          "#8F3621",
+          "#B5452B",
+          "#D97757",
+          "#E8977F",
+          "#F5C6B5",
+          "#FDF2EC"
+        ]
+      },
+      "whatsapp-green": {
+        "role": "secondary",
+        "displayName": "WhatsApp Green",
+        "canonical": "#25D366",
+        "tonalRamp": [
+          "#073B1B",
+          "#0C5E2C",
+          "#128C40",
+          "#128C7E",
+          "#1DA851",
+          "#25D366",
+          "#76EC9E",
+          "#DCF8C6"
+        ]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Editorial Canvas",
+        "canonical": "#F8FAFC",
+        "tonalRamp": [
+          "#020617",
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#64748B",
+          "#94A3B8",
+          "#E2E8F0",
+          "#F8FAFC"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Hero Display",
+        "purpose": "Major landing page value proposition headlines and hero callouts."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Section titles, major feature pillar introductions."
+      },
+      "title": {
+        "displayName": "Card & Component Title",
+        "purpose": "Feature titles, student names in roster, dialogue titles."
+      },
+      "body": {
+        "displayName": "Body Standard",
+        "purpose": "Default readable text, test paper questions, WhatsApp updates."
+      },
+      "label": {
+        "displayName": "Action Label & Tag",
+        "purpose": "Buttons, board tags (CBSE/ICSE), curriculum badges."
+      },
+      "mono": {
+        "displayName": "Code, Blueprint & Rubric",
+        "purpose": "Step marking points [1M], LaTeX equations, UPI strings."
+      }
+    },
+    "shadows": [
+      {
+        "name": "elevation-low",
+        "value": "0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05)",
+        "purpose": "Resting cards and containers on light backgrounds."
+      },
+      {
+        "name": "elevation-medium",
+        "value": "0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05)",
+        "purpose": "Hover states, dropdowns, floating controls."
+      },
+      {
+        "name": "elevation-high",
+        "value": "0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04)",
+        "purpose": "Live playground canvas, modals, early access waitlist drawer."
+      },
+      {
+        "name": "elevation-claude-glow",
+        "value": "0 0 32px -4px rgba(79, 70, 229, 0.2), 0 0 16px -2px rgba(217, 119, 87, 0.15)",
+        "purpose": "Frontier AI active generation indicator."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default easing for button hovers and modal fades."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Button hover, active push transitions."
+      },
+      {
+        "name": "duration-normal",
+        "value": "250ms",
+        "purpose": "Modal appearance, tab switching."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "2xl", "value": "1536px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary high-contrast platform CTA for signups and generation triggers.",
+      "html": "<button class=\"ds-btn-primary\">Join Tutor Beta (Free)</button>",
+      "css": ".ds-btn-primary { background: #4F46E5; color: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 600; font-size: 15px; padding: 14px 28px; border-radius: 10px; border: none; cursor: pointer; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.15); transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); display: inline-flex; align-items: center; justify-content: center; } .ds-btn-primary:hover { background: #4338CA; transform: translateY(-1px); box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2); } .ds-btn-primary:active { transform: translateY(0); background: #312E81; }"
+    },
+    {
+      "name": "WhatsApp 1-Tap Trigger Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Direct WhatsApp action trigger with embedded UPI reminder.",
+      "html": "<button class=\"ds-btn-whatsapp\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\" style=\"margin-right:8px\"><path d=\"M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z\"/></svg>Send 1-Click Reminder</button>",
+      "css": ".ds-btn-whatsapp { background: #25D366; color: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 600; font-size: 14px; padding: 12px 24px; border-radius: 8px; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.15s ease; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); } .ds-btn-whatsapp:hover { background: #128C7E; transform: translateY(-1px); }"
+    },
+    {
+      "name": "Powered by Claude Badge",
+      "kind": "chip",
+      "refersTo": "badge-claude",
+      "description": "Frontier AI model indicator for Anthropic Claude integration.",
+      "html": "<span class=\"ds-badge-claude\"><span class=\"ds-claude-dot\"></span>Powered by Anthropic Claude 5.5</span>",
+      "css": ".ds-badge-claude { background: #FDF2EC; color: #D97757; border: 1px solid #F5C6B5; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.02em; padding: 6px 14px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 6px; } .ds-claude-dot { width: 6px; height: 6px; border-radius: 50%; background: #D97757; display: inline-block; }"
+    },
+    {
+      "name": "Standard Feature Card",
+      "kind": "card",
+      "refersTo": "card-standard",
+      "description": "Clean elevated surface for platform feature pillars and benefits.",
+      "html": "<div class=\"ds-card-standard\"><h3 class=\"ds-card-title\">Smart Worksheet Maker</h3><p class=\"ds-card-body\">Generate CBSE & ICSE board-aligned practice sets with step-by-step marking rubrics in 30 seconds.</p></div>",
+      "css": ".ds-card-standard { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05); transition: border-color 0.2s, box-shadow 0.2s; } .ds-card-standard:hover { border-color: #CBD5E1; box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.07); } .ds-card-title { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 18px; font-weight: 600; color: #0F172A; margin: 0 0 8px 0; } .ds-card-body { font-family: 'Inter', system-ui, sans-serif; font-size: 14px; line-height: 1.6; color: #475569; margin: 0; }"
+    },
+    {
+      "name": "Form Input Field",
+      "kind": "input",
+      "refersTo": "input-default",
+      "description": "High-legibility form input for waitlist onboarding and phone numbers.",
+      "html": "<input type=\"text\" class=\"ds-input-default\" placeholder=\"Teacher WhatsApp Number\" />",
+      "css": ".ds-input-default { background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 8px; padding: 12px 16px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; color: #0F172A; width: 100%; box-sizing: border-box; outline: none; transition: border-color 0.15s, box-shadow 0.15s; } .ds-input-default:focus { border-color: #4F46E5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Master Educator's Studio",
+    "overview": "TutorGate's visual identity unites the rigorous academic discipline of India’s top coaching ecosystems with the intellectual sophistication and luminous clarity of Anthropic Claude frontier AI. Every screen balances two distinct rhythms: The Crisp Daylight Workspace (clear, airy surfaces for document scanning and administration) and The Frontier Intelligence Chamber (focused obsidian surfaces for live AI streaming and prompt caching).",
+    "keyCharacteristics": [
+      "Academic Authority: Razor-sharp typography and official CBSE/ICSE blueprint structures",
+      "Luminous Precision: Intelligent chromatic accents in Academic Indigo, Surya Amber, and Veracity Emerald",
+      "Indian Cultural Nuance: Native integration of WhatsApp messaging cards and UPI deep-links",
+      "Frontier AI Legitimacy: Prominent, tasteful Anthropic Claude credentials and agent indicators"
+    ],
+    "rules": [
+      {
+        "name": "The One Primary Rule",
+        "body": "Every screen must contain exactly one dominant primary action in Academic Indigo (#4F46E5). Subsidiary actions must use secondary outlined or semantic button variants.",
+        "section": "colors"
+      },
+      {
+        "name": "The Real-Money Emerald Rule",
+        "body": "Green (#10B981 or #25D366) is reserved strictly for financial reconciliation, attendance confirmation, and verified STEM proofs.",
+        "section": "colors"
+      },
+      {
+        "name": "The Board Blueprint Legibility Rule",
+        "body": "Question papers and worksheet previews must never drop below 14px body size with 1.6 line height.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Boundary Rule",
+        "body": "No card or floating panel may rely on shadow alone for boundary definition. Every elevated element must carry a crisp 1px border.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do maintain strict 16px horizontal screen padding on mobile devices and 24px on desktop.",
+      "Do render all currency figures in Indian Rupee format with standard commas (₹3,000) and tabular figures.",
+      "Do provide both Student Printable Copy and Teacher Marking Scheme views whenever showing generated test papers.",
+      "Do keep tap targets at a minimum of 44px x 44px on mobile devices for WhatsApp reminder and attendance buttons."
+    ],
+    "donts": [
+      "Don't use muddy drop-shadows with blur radius > 24px or opacity > 10%.",
+      "Don't display mathematical formulas or question numbers with proportional fonts where subscripts and superscripts collide.",
+      "Don't hide WhatsApp or UPI functionality behind complex sub-menus; Indian home tutors demand 1-tap mobile workflows.",
+      "Don't invent artificial Silicon Valley jargon; speak directly to Indian tutoring realities (CBSE, ICSE, Class 10, RD Sharma, UPI, WhatsApp)."
+    ]
+  }
+}

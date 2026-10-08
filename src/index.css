@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Strict Numbers Rule from DESIGN.md */
+  .tabular-nums,
+  [data-tabular-nums="true"],
+  .currency,
+  .metric-value,
+  .mark-weight {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  /* Subtle Hairline Border Rule */
+  .border-hairline {
+    border: 1px solid #E2E8F0;
+  }
+  
+  .border-hairline-dark {
+    border: 1px solid #1F2937;
+  }
+
+  /* Glowing Claude AI Border */
+  .claude-glow {
+    box-shadow: 0 0 24px -2px rgba(79, 70, 229, 0.25), 0 0 12px -2px rgba(217, 119, 87, 0.2);
+  }
+}
+
+/* Print Stylesheet for Authentic CBSE / ICSE A4 Test Papers */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm;
+  }
+
+  .printable-paper {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
